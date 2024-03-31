@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #111;
+    perspective: 700px;
+}
+.home-header span{
+    background-image: linear-gradient(45deg,#76008d,#7b38e7,#67e1ff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.home-header h1{
+    color: antiquewhite;
+    transform: translate(450px,30px);
+}
+
+.flipcards{
+    margin:100px 50px;
+    position: relative;
+    transform-style: preserve-3d;
+    padding:0px 20px;
+    
+}
+.flipcards-2{
+    clear: both;
+    margin:50px 50px;
+    position: relative;
+    transform-style: preserve-3d;
+    padding:0px 20px;
+    
+}
+
+.card{
+    width: 270px;
+    height: 200px;
+    transition: all 3s;
+    position: relative;
+    margin-right: 10px;
+    float: left;
+}
+
+.front, .back{
+    position:absolute;
+    backface-visibility: hidden;
+}
+
+.front{
+    z-index: 1;
+}
+
+.back{
+    background-color: bisque;
+    color: #7b38e7;
+    text-align: center;
+}
+
+.card img{
+    width: 270px;
+    height: 200px;
+    margin-bottom: 90px;
+    float: left;
+    border-radius: 6px;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+
+}
+
+button{
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    color: #f5eded;
+    background-color: crimson;
+    border: none;
+}
